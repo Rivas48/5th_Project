@@ -1,0 +1,98 @@
+// Descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$lightblue		: #00E5EE;
+$teal           : #008080;
+$aqua			: #1FB08A;
+$royal-green    : #6AAF6A;
+$coral          : #F08080;
+$purple			: #AA8CC5;
+$darksalmon	    : #e9967a;
+$moccassin      : #ffe4b5;
+$palegreen      : #98fb98;
+$lightseagreen  : #20b2aa;
+$lawngreen      : #7cfc00;
+$red 			: #880000; 	
+$lightblue      : #42C0FB;
+// Functional color variables
+
+// UI Colors
+
+$btn-colors: (
+	default  : $lightblue,
+	success  : $royal-green,
+	error    : $coral,
+	warning  : $purple,
+	info     : $darksalmon
+);
+
+$grid-colors: (
+    col--3   :$purple,
+    col--4   :$moccassin,
+    col--5   :$palegreen,
+    col--6   :$royal-green, 
+    col--7   :$darksalmon,
+    col--8   :$lightseagreen,
+    col--12  :$red
+);
+
+$color-prim         : $white;
+$color-sec          : $black;
+
+$color-text-light   : $teal;
+$color-text-base    :$aqua ;
+$color-text-dark    :$royal-green ;
+
+$color-link-default :$teal ;
+$color-link-visited : $aqua;
+
+// Font-size  
+$small:5px;
+$size :19px;
+$medium :23px;
+$large:25px;
+
+//Font-Weights
+
+$XL:bolder;
+$L:bold;
+$M:normal;
+$S:lighter;
+
+
+// Font stacks
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-helvetica  : 'Helvetica Neue', $stack-sans-serif;
+$stack-abolition  : 'Abolition Regular', $stack-sans-serif;
+
+// Border radius
+
+$br: 3px;
+
+
+// Media query breakpoints
+
+$brk-narrow : '(480px)';
+$brk-wide   : '(1400px)';
+
+// Grid 
+$g-col-count    : 12;
+$g-col-width    : 100px;
+$g-gutter-width : 10px;
+$g-cont-max-w   : 1px;
+
+
+
+// Approximative size of the blocks when put as a fraction 1/$g-row-count
+$g-row-count-3    : 3;
+$g-row-count-4    : 4;
+$g-row-count-5    : 5;
+$g-row-count-6    : 6;
+$g-row-count-7    : 7;
+$g-row-count-8    : 8;
+$g-row-count-12   : 12;
+
+$g-total-width-available    : 1; 
+

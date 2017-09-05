@@ -1,0 +1,148 @@
+@mixin narrow{
+	@media (min-width: #{480px}) and (max-width: #{768px - 1}) {
+		@content;
+	}
+	
+}
+
+@mixin desktop{
+	@media (min-width: #{770px}) {
+		@content;
+	}
+}
+
+@mixin first(){
+	display:flex;
+	justify-content:center;
+	@include desktop {
+		display:inline-flex;
+		width:120px;
+		padding:0 0 0 0px;
+		margin-left:100px;
+		}
+
+}
+
+@mixin button(){
+	@extend .centered;
+	display:flex;
+	margin: 10px auto;
+	margin-left: 0px;
+	height:50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;	
+	border-radius:8px;
+	color:white;
+	width:50px;	
+	border-style: none;
+	font-size: $size;
+	@include desktop {
+		display:inline-flex;
+		width:120px;
+		padding:0 0 0 0px;
+		margin-left:100px;
+		
+
+	}
+}
+@mixin rectangle(){
+	width:200px;
+	padding-right: 90px;
+	padding-left: 160px;
+	padding-top: 10px;
+	margin-left: 0px;
+	border-radius: 0;
+}
+@mixin col-x-list {
+  @for $i from 1 through $columns {
+      .grid__row--#{$i}-m { }
+  }
+}
+
+@mixin centered() {
+	color:$color-prim;
+}
+
+@mixin gridsystem(){
+		display:flex;
+@include desktop {
+		flex:1;
+		
+}
+}
+
+@mixin flex-row{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+
+
+}
+
+@mixin flexbox {
+			display: flex; 		
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+      	    @content;
+}
+
+@mixin flex-column{
+	display:flex;
+	flex-direction:column;
+}
+
+@mixin flex{
+	display:flex;
+}
+
+@mixin btn-colors($map) {
+	@each $theme, $color in $map {
+		&.btn--#{$theme} {
+			background-color: $color;    
+		}
+	}
+}
+
+@mixin grid-colors($map) {
+	@each $theme, $color in $map {
+		&.grid__#{$theme} {
+			background-color: $color;    
+		}
+	}
+}
+
+@mixin doubly($margin: 1em) {
+	& + & {
+		margin-left:$margin;
+		@content;
+	}
+}
+
+
+@mixin btn-colors($map) {
+	@each $theme, $color in $map {
+		&.btn--#{$theme} {
+			background-color: $color; 
+
+		}
+	}
+}
+
+@mixin grid-colors($map) {
+	@each $theme, $color in $map {
+		&.grid__#{$theme} {
+			background-color: $color;    
+		}
+	}
+}
+
+@mixin e($element) {
+	&__#{$element} {
+    @content;
+  }
+}
+
