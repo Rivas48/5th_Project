@@ -1,0 +1,94 @@
+
+.card{
+	display:flex;
+	flex-direction:column;
+	width:80%;
+	margin:auto;
+	@include desktop {
+	width:100%;
+	margin: 10px auto;
+	
+
+}
+}
+.headline--secondary{
+	color:white;
+	@include desktop {
+	color:black;
+	display:flex;
+	justify-content:flex-start;
+	margin-left: 100px;
+}
+}
+.card .headline--secondary{
+	color:white;
+	@include desktop {
+	color:black;
+	display:flex;
+	justify-content:flex-start;
+	margin-left:0px;
+}
+}
+.headline--primary{
+	color:$teal;
+	display:flex;
+}
+
+.link{
+	color:$teal;
+}
+.blockquote{
+	border-left: solid 8px $aqua;
+	padding-left: 10px;
+	@include desktop{
+		width:50%;
+		font-weight: $XL;
+		font-style:italic;
+
+	}
+}
+
+.form{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	margin:auto;
+	@include desktop{
+	
+	}
+}
+
+.form__label--hidden{
+	display:none;
+}
+
+.form__input{
+	margin: 10px auto;
+	width:75%;
+	border-style: none;
+	border-bottom: solid 8px $aqua;
+}
+
+.form .btn--default{
+	@include desktop{
+		width:40%;
+		margin:auto;
+	}
+}
+.grid__col--12 .card{
+	@include desktop{
+	font-size:30px;
+}
+}
+.form .img--avatar{
+	padding-left: 0px;
+	@include desktop{
+	width:100px;
+	height:100px;
+}
+}
+
+.img--avatar, .img--frame{
+	display:flex;
+	margin:10px auto;
+}

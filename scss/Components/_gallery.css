@@ -1,0 +1,2 @@
+.card{display:flex;flex-direction:column;width:80%;margin:auto}@media (min-width: 870px){.card{margin:10px auto}}.blockquote{border-left:solid 8px blue;padding-left:10px}.form{display:flex;flex-direction:column;width:100%;margin:auto}.form__label--hidden{display:none}.form__input{margin:10px auto;width:75%;border-style:none;border-bottom:solid 8px blue}.img--avatar,.img--frame{margin:10px auto}
+/*# sourceMappingURL=_gallery.css.map */

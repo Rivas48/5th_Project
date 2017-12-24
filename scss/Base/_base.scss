@@ -1,0 +1,33 @@
+ul{
+	display:block;
+	list-style-type: none;
+	text-align: center;
+	margin:60px auto;
+	@include desktop {
+		display:flex;
+		margin:35px auto;
+		justify-content:flex-end;
+}
+}
+
+p{
+	margin:auto;
+	width:100%;
+		@include desktop {
+		margin-left:0px;	
+		margin-top:20px; 
+		margin-bottom:20px;	
+		text-align:left;
+		width:60%;
+		line-height:30px;
+		
+}
+}
+
+a{
+	text-decoration: none;
+	margin:auto;
+	color:$color-sec;	
+	
+
+}

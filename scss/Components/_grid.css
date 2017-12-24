@@ -1,0 +1,2 @@
+.container{display:flex;flex-direction:column;width:100%}.grid__row{display:flex;flex-direction:column;margin:auto}@media (min-width: 870px){.grid__row{flex-direction:row;justify-content:flex-start}}.grid__col--4{width:100%;margin:auto}.grid__col--6{display:flex}.grid__col--12{display:flex;flex-direction:column}.theme__colors{width:80%;margin:10px auto;height:40px;border-radius:8px;offset:none}
+/*# sourceMappingURL=_grid.css.map */

@@ -1,0 +1,59 @@
+
+.container{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	@include desktop {
+		
+}
+}
+
+.grid__row{
+	display:flex;
+	flex-direction:column;
+	@include desktop {
+	flex-direction:row;
+	justify-content:flex-start;
+
+
+}
+}
+
+
+[class^='grid__col--']{
+	flex-wrap:wrap;	
+	justify-content: center;
+	@include desktop{
+		margin-left: 100px;
+
+		
+	}
+}
+
+
+@include desktop {
+	@for $i from 1 through $g-col-count {
+		$context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+		$target: ($g-col-width *  $i) + ($g-gutter-width * ($i - 1));
+
+		//Generate column modifier classes
+
+		.grid__col--#{$i} {
+			width: percentage($target / $context);
+		
+		}
+	}
+}
+
+// Column styles
+
+[class^='grid__col--']{
+	@include desktop {
+		@include doubly(percentage($g-gutter-width / $context));
+		float:left;
+		min-height : 1px;
+		&:last-of-type {
+			
+		}
+	}
+}
